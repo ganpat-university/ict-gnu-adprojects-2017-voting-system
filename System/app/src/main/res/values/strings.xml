@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">VotingSystem</string>
+    <string name="edited_text">Edited Text</string>
 </resources>
