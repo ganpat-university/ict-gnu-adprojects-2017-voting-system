@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Alert_Voter_Activity"></activity>
+        <activity android:name=".Result_Activity" />
+        <activity android:name=".Vote_Activity" />
+        <activity android:name=".Candidate_Info_Activity" />
+        <activity android:name=".Dashboard_Voter_Activity" />
+        <activity android:name=".Alert_Admin_Activity" />
+        <activity android:name=".Result_Admin_Activity" />
+        <activity android:name=".Voting_Admin_Activity" />
+        <activity android:name=".Candidate_Admin_Activity" />
+        <activity android:name=".Dashboard_Admin_Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
