@@ -27,8 +27,7 @@
             android:layout_height="20dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="@string/candidate_1"
-            tools:text="Candidate 1" />
+            android:text="@string/candidate_1" />
 
         <RadioButton
             android:id="@+id/radioButton4"
@@ -36,8 +35,7 @@
             android:layout_height="20dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="@string/candidate_2"
-            tools:text="Candidate 2" />
+            android:text="@string/candidate_2" />
 
         <RadioButton
             android:id="@+id/radioButton5"
@@ -45,8 +43,7 @@
             android:layout_height="20dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="@string/candidate_3"
-            tools:text="Candidate 3" />
+            android:text="@string/candidate_3" />
 
         <RadioButton
             android:id="@+id/radioButton6"
@@ -54,8 +51,7 @@
             android:layout_height="20dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="@string/candidate_4"
-            tools:text="Candidate 4" />
+            android:text="@string/candidate_4" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,13 +61,12 @@
             android:paddingTop="35dp">
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/button2"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/edit"
-                tools:text="Edit" />
+                android:text="@string/edit" />
 
             <Button
                 android:id="@+id/button3"
@@ -79,17 +74,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/add"
-                tools:text="Add" />
+                android:text="@string/add" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/button4"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/delete"
-                tools:text="Delete" />
+                android:text="@string/delete" />
         </LinearLayout>
 
     </LinearLayout>

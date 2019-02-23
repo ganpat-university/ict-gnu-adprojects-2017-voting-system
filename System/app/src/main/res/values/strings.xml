@@ -11,4 +11,7 @@
     <string name="add">Add</string>
     <string name="delete">Delete</string>
     <string name="edit">Edit</string>
+    <string name="admin">Admin</string>
+    <string name="voters">Voters</string>
+
 </resources>
