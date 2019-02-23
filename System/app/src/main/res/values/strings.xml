@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">VotingSystem</string>
     <string name="edited_text">Edited Text</string>
+    <string name="cand1">Cand1</string>
+    <string name="cand2">cand2</string>
+    <string name="cand3">Cand3</string>
+    <string name="cand4">Cand4</string>
+    <string name="vote">Vote</string>
+    <string name="end">End</string>
+    <string name="start">Start</string>
 </resources>
