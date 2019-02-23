@@ -13,5 +13,6 @@
     <string name="edit">Edit</string>
     <string name="admin">Admin</string>
     <string name="voters">Voters</string>
+    <string name="show_result">Show Result</string>
 
 </resources>
