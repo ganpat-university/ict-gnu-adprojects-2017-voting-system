@@ -1,18 +1,13 @@
 <resources>
     <string name="app_name">VotingSystem</string>
     <string name="edited_text">Edited Text</string>
-    <string name="candidate_1">Candidate 1</string>
-    <string name="candidate_2">Candidate 2</string>
-    <string name="candidate_3">Candidate 3</string>
-    <string name="candidate_4">Candidate 4</string>
-    <string name="candidate">Candidate</string>
-    <string name="vote">Vote</string>
-    <string name="result">Result</string>
-    <string name="add">Add</string>
-    <string name="delete">Delete</string>
-    <string name="edit">Edit</string>
-    <string name="admin">Admin</string>
-    <string name="voters">Voters</string>
+    <string name="candidate_information">Candidate Information</string>
     <string name="show_result">Show Result</string>
-
+    <string name="vote">Vote</string>
+    <string name="the_winning_candidate_is">The Winning Candidate is:</string>
+    <string name="seats_won">Seats Won:</string>
+    <string name="candidate_1">Candidate 1:</string>
+    <string name="candidate_2">Candidate 2:</string>
+    <string name="candidate_3">Candidate 3:</string>
+    <string name="candidate_4">Candidate 4:</string>
 </resources>
