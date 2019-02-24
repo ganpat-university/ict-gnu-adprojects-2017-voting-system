@@ -6,4 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".Candidate_Info_Activity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="392dp"
+            android:layout_height="155dp"
+            android:text="@string/candidate_1"
+            tools:text="Candidate 1" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="157dp"
+            android:text="@string/candidate_2"
+            tools:text="Candidate 2" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:text="@string/candidate_3"
+            tools:text="Candidate 3" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="157dp"
+            android:text="@string/candidate_4"
+            tools:text="Candidate 4" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
