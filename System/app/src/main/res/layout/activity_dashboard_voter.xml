@@ -24,7 +24,8 @@
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="@string/candidate" />
+            android:text="@string/candidate"
+            tools:text="@string/candidate" />
 
         <Button
             android:id="@+id/button9"
