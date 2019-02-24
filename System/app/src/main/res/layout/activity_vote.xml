@@ -21,25 +21,25 @@
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/cand1" />
+            android:text="@string/candidate_1" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/cand2" />
+            android:text="@string/candidate_2" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cand3" />
+            android:text="@string/candidate_3" />
 
         <RadioButton
             android:id="@+id/radioButton5"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/cand4" />
+            android:text="@string/candidate_4" />
 
         <Button
             android:id="@+id/button"
