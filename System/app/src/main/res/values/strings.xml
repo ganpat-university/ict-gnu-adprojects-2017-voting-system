@@ -1,6 +1,4 @@
 <resources>
-    <string name="candidate_information">Candidate Information</string>
-    <string name="show_result">Show Result</string>
     <string name="the_winning_candidate_is">The Winning Candidate is:</string>
     <string name="seats_won">Seats Won:</string>
     <string name="vote_start_end">Vote(Start/End)</string>
@@ -20,4 +18,7 @@
     <string name="voters">Voters</string>
     <string name="start">Start</string>
     <string name="end">End</string>
+    <string name="vote_start_stop">Vote (Start/Stop)</string>
+    <string name="candidate_information">Candidate Information</string>
+    <string name="show_result">Show Result</string>
 </resources>
