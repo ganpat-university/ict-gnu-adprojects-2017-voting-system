@@ -14,7 +14,7 @@ public class Dashboard_Admin_Activity extends AppCompatActivity {
     }
     public void goToCandidateInfo(View view)
     {
-        Intent intent = new Intent(this, Candidate_Info_Activity.class);
+        Intent intent = new Intent(this, Candidate_Admin_Activity.class);
         startActivity(intent);
     }
     public void goVoteView(View view)
@@ -24,7 +24,7 @@ public class Dashboard_Admin_Activity extends AppCompatActivity {
     }
     public void goToResultAdmin(View view)
     {
-        Intent intent = new Intent(this, Result_Activity.class);
+        Intent intent = new Intent(this, Result_Admin_Activity.class);
         startActivity(intent);
     }
 }

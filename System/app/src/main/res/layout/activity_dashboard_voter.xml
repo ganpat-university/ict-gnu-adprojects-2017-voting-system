@@ -24,18 +24,21 @@
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:onClick="goToCandi"
             android:text="@string/candidate" />
 
         <Button
             android:id="@+id/button9"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:onClick="goToVote"
             android:text="@string/vote" />
 
         <Button
             android:id="@+id/button10"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:onClick="goToResult"
             android:text="@string/result" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

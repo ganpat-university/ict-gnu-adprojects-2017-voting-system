@@ -13,11 +13,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
     public void goToAdmin(View view)
     {
         Intent intent = new Intent(this, Dashboard_Admin_Activity.class);
         startActivity(intent);
     }
+
     public void goToVoters(View view)
     {
         Intent intent = new Intent(this, Dashboard_Voter_Activity.class);

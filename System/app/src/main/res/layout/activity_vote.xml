@@ -17,35 +17,42 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/candidate_1" />
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/candidate_2" />
-
-        <RadioButton
-            android:id="@+id/radioButton4"
+        <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/candidate_3" />
+            android:orientation="vertical"
+            android:paddingTop="40dp">
 
-        <RadioButton
-            android:id="@+id/radioButton5"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/candidate_4" />
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/candidate_1" />
 
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/candidate_2" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/candidate_3" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/candidate_4" />
+        </RadioGroup>
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="goTomainActivity"
             android:text="@string/vote" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
