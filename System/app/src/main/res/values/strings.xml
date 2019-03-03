@@ -21,4 +21,7 @@
     <string name="vote_start_stop">Vote (Start/Stop)</string>
     <string name="candidate_information">Candidate Information</string>
     <string name="show_result">Show Result</string>
+    <string name="candidate_name">Candidate Name</string>
+    <string name="description">Description</string>
+    <string name="party_name">Party Name</string>
 </resources>
