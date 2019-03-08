@@ -16,4 +16,8 @@ public class Candidate_Admin_Activity extends AppCompatActivity {
         Intent intent = new Intent(this, Candidate_Edit_Activity.class);
         startActivity(intent);
     }
+    public void goToCandidateAdd(View view) {
+        Intent intent = new Intent(this, Candidate_Add_Activity.class);
+        startActivity(intent);
+    }
 }

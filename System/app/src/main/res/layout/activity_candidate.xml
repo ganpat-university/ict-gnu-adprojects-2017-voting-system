@@ -83,6 +83,7 @@
                 android:layout_width="36dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="goToCandidateAdd"
                 android:padding="10dp"
                 android:text="@string/add"
                 android:textAppearance="@android:style/TextAppearance.Material.Widget.Button" />
