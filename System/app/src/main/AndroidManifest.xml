@@ -15,6 +15,7 @@
         <activity android:name=".Candidate_Info_Activity" />
         <activity android:name=".Dashboard_Voter_Activity" />
         <activity android:name=".Alert_Admin_Activity" />
+        <activity android:name=".Candidate_Add_Activity" />
         <activity android:name=".Result_Admin_Activity" />
         <activity android:name=".Voting_Admin_Activity" />
         <activity android:name=".Candidate_Admin_Activity" />

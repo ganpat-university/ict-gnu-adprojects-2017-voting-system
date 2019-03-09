@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
 //        myRef.setValue("Hello, World!");
         // Create a new user with a first and last name
         Map<String, Object> user = new HashMap<>();
-        user.put("first", "Jaival");
-        user.put("last", "Saija");
-        user.put("born", 1999);
+        user.put("first", "Amisha");
+        user.put("last", "Tagore");
+        user.put("born", 2000);
 
 // Add a new document with a generated ID
         db.collection("users")

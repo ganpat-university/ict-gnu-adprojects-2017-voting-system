@@ -36,7 +36,9 @@
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints=""
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/textView5"
@@ -68,7 +70,8 @@
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/textView6"
@@ -84,7 +87,8 @@
         app:layout_constraintBottom_toTopOf="@+id/editText6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        tools:text="Description" />
 
     <EditText
         android:id="@+id/editText6"
@@ -94,11 +98,12 @@
         android:layout_marginTop="19dp"
         android:layout_marginEnd="90dp"
         android:ems="10"
-        android:hint="Description of the @string/candidate"
+        android:hint="@string/description_of_the_string_candidate"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/button16"
