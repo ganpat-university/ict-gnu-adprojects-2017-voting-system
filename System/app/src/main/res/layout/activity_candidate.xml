@@ -6,98 +6,106 @@
     android:layout_height="match_parent"
     tools:context=".Candidate_Admin_Activity">
 
-    <LinearLayout
-        android:layout_width="412dp"
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <RadioGroup
+        <RadioButton
+            android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:id="@+id/radioButton3"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_margin="20dp"
-                android:layout_weight="1"
-                android:text="@string/candidate_1" />
-
-            <RadioButton
-                android:id="@+id/radioButton4"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_margin="20dp"
-                android:layout_weight="1"
-                android:text="@string/candidate_2" />
-
-            <RadioButton
-                android:id="@+id/radioButton5"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_margin="20dp"
-                android:layout_weight="1"
-                android:text="@string/candidate_3" />
-
-            <RadioButton
-                android:id="@+id/radioButton6"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_margin="20dp"
-                android:layout_weight="1"
-                android:text="@string/candidate_4" />
-        </RadioGroup>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="127dp"
+            android:layout_margin="20dp"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            android:paddingTop="35dp">
+            android:text="@string/candidate_1" />
 
-            <Button
-                android:id="@+id/button2"
-                style="@android:style/Widget.Material.Button"
-                android:layout_width="36dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="goToCandidateEdit"
-                android:padding="10dp"
-                android:text="@string/edit"
-                android:textAppearance="@android:style/TextAppearance.Material.Widget.Button" />
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="@string/candidate_2" />
 
-            <Button
-                android:id="@+id/button3"
-                style="@android:style/Widget.Material.Button"
-                android:layout_width="36dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="goToCandidateAdd"
-                android:padding="10dp"
-                android:text="@string/add"
-                android:textAppearance="@android:style/TextAppearance.Material.Widget.Button" />
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="@string/candidate_3" />
 
-            <Button
-                android:id="@+id/button4"
-                style="@android:style/Widget.Material.Button"
-                android:layout_width="36dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:text="@string/delete"
-                android:textAppearance="@android:style/TextAppearance.Material.Widget.Button" />
-        </LinearLayout>
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="@string/candidate_4" />
+    </RadioGroup>
 
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <Button
+            android:id="@+id/Edit"
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:background="#0288D1"
+            android:onClick="goToCandidateEdit"
+            android:text="@string/edit"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Add"
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:background="#0288D1"
+            android:onClick="goToCandidateAdd"
+            android:text="@string/add"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Delete"
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:background="#0288D1"
+            android:text="@string/delete"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
