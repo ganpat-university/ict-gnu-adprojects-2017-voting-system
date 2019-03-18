@@ -6,25 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Result_Admin_Activity">
 
-    <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="269dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="269dp"
-        android:orientation="vertical"
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/Widget.Material.Button"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#03A9F4"
+        android:text="@string/show_result"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/show_result"
-            tools:text="Show Result" />
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Show Result" />
 </android.support.constraint.ConstraintLayout>

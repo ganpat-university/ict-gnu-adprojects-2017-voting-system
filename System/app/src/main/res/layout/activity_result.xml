@@ -7,10 +7,15 @@
     tools:context=".Result_Activity">
 
     <Button
-        android:id="@+id/button14"
-        android:layout_width="wrap_content"
+        android:id="@+id/showresult"
+        style="@android:style/Widget.Material.Button"
+        android:layout_width="111dp"
         android:layout_height="wrap_content"
+        android:background="#03A9F4"
         android:text="@string/show_result"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
