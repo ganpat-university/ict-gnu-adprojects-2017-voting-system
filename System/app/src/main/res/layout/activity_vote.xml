@@ -6,53 +6,62 @@
     android:layout_height="match_parent"
     tools:context=".Vote_Activity">
 
-    <LinearLayout
+    <RadioGroup
+        android:id="@+id/radioGroup2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="35dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Vote"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <RadioGroup
+        <RadioButton
+            android:id="@+id/radioButton2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="40dp">
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:text="@string/candidate_1" />
 
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="@string/candidate_1" />
-
-            <RadioButton
-                android:id="@+id/radioButton3"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="@string/candidate_2" />
-
-            <RadioButton
-                android:id="@+id/radioButton4"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="@string/candidate_3" />
-
-            <RadioButton
-                android:id="@+id/radioButton5"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="@string/candidate_4" />
-        </RadioGroup>
-        <Button
-            android:id="@+id/button"
+        <RadioButton
+            android:id="@+id/radioButton3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="goTomainActivity"
-            android:text="@string/vote" />
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:text="@string/candidate_2" />
 
-    </LinearLayout>
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:text="@string/candidate_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:text="@string/candidate_4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Vote"
+        style="@android:style/Widget.Material.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#03A9F4"
+        android:onClick="goTomainActivity"
+        android:text="@string/vote"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
 </android.support.constraint.ConstraintLayout>

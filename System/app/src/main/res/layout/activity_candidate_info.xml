@@ -3,50 +3,86 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="41.57dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
     tools:context=".Candidate_Info_Activity">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="1dp"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4">
+        app:layout_constraintStart_toStartOf="parent">
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="392dp"
-            android:layout_height="155dp"
-            android:text="@string/candidate_1"
-            tools:text="Candidate 1" />
-
-        <Button
-            android:id="@+id/button7"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="157dp"
-            android:text="@string/candidate_2"
-            tools:text="Candidate 2" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4">
 
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="match_parent"
-            android:layout_height="159dp"
-            android:text="@string/candidate_3"
-            tools:text="Candidate 3" />
+            <Button
+                android:id="@+id/button6"
+                style="@android:style/Widget.Material.Button"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:layout_marginBottom="10dp"
+                android:background="#03A9F4"
+                android:fontFamily="sans-serif"
+                android:text="@string/candidate_1"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                tools:text="Candidate 1" />
 
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="match_parent"
-            android:layout_height="157dp"
-            android:text="@string/candidate_4"
-            tools:text="Candidate 4" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/button7"
+                style="@android:style/Widget.Material.Button"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:layout_marginBottom="10dp"
+                android:background="#03A9F4"
+                android:fontFamily="sans-serif"
+                android:text="@string/candidate_2"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                tools:text="Candidate 2" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@android:style/Widget.Material.Button"
+                android:layout_width="match_parent"
+                android:layout_height="159dp"
+                android:layout_marginBottom="10dp"
+                android:background="#03A9F4"
+                android:fontFamily="sans-serif"
+                android:text="@string/candidate_3"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                tools:text="Candidate 3" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@android:style/Widget.Material.Button"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:background="#03A9F4"
+                android:fontFamily="sans-serif"
+                android:text="@string/candidate_4"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                tools:text="Candidate 4" />
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
