@@ -8,40 +8,55 @@
     tools:context=".Dashboard_Admin_Activity">
 
     <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="715dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="0dp"
+        android:layout_height="253dp"
         android:orientation="vertical"
+        android:theme="@style/Base.Theme.MaterialComponents"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/Candidate_Information"
+            style="@android:style/Widget.Material.Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="20dp"
+            android:background="#03A9F4"
             android:onClick="goToCandidateInfo"
-            android:text="@string/candidate_information" />
+            android:text="@string/candidate_information"
+            android:textAllCaps="false"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:theme="@style/Base.Theme.MaterialComponents" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/Show_Result"
+            style="@android:style/Widget.Material.Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
+            android:layout_height="65dp"
+            android:layout_marginBottom="20dp"
+            android:background="#03A9F4"
+            android:fontFamily="sans-serif"
             android:onClick="goToResultAdmin"
-            android:text="@string/show_result" />
+            android:text="@string/show_result"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/Vote"
+            style="@android:style/Widget.Material.Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/design_default_color_primary"
+            android:layout_height="65dp"
+            android:background="#03A9F4"
+            android:fontFamily="sans-serif"
             android:onClick="goVoteView"
-            android:text="@string/vote_start_stop" />
+            android:text="@string/vote_start_stop"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

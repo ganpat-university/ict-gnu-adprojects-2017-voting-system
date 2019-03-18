@@ -8,12 +8,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="395dp"
-        android:layout_height="715dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,24 +17,41 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/candi_info"
+            style="@android:style/Widget.Material.Button"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="20dp"
+            android:background="#03A9F4"
             android:onClick="goToCandi"
-            android:text="@string/candidate" />
+            android:text="@string/candidate"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/vote"
+            style="@android:style/Widget.Material.Button"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="20dp"
+            android:background="#03A9F4"
             android:onClick="goToVote"
-            android:text="@string/vote" />
+            android:text="@string/vote"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/showresult"
+            style="@android:style/Widget.Material.Button"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="65dp"
+            android:background="#03A9F4"
             android:onClick="goToResult"
-            android:text="@string/result" />
+            android:text="@string/result"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
