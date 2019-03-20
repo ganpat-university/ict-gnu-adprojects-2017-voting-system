@@ -20,11 +20,6 @@ public class Voting_Admin_Activity extends AppCompatActivity {
     DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
     DatabaseReference condRef = rootRef.child("condition");
 
-    @Override
-    protected void onResume() {
-        finish();
-    }
-
     public void Start(View view) {
 
         //super.onStart();
