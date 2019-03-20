@@ -13,50 +13,54 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import javax.xml.transform.Result;
+
 public class Dashboard_Voter_Activity extends AppCompatActivity {
-    DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
-    DatabaseReference condref = rootRef.child("condition");
-
-
+    DatabaseReference DataRef = FirebaseDatabase.getInstance().getReference();
+    DatabaseReference condRef = DataRef.child("condition_result");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_voter);
-        disable();
     }
 
-    public void goToCandi(View view) {
+    public void goToCandi(View view)
+    {
         Intent intent = new Intent(this, Candidate_Info_Activity.class);
         startActivity(intent);
     }
-
-    public void goToVote(View view) {
+    public void goToVote(View view)
+    {
         Intent intent = new Intent(this, Vote_Activity.class);
         startActivity(intent);
     }
-
-    public void goToResult(View view) {
+    public void goToResult(View view)
+    {
         Intent intent = new Intent(this, Result_Activity.class);
         startActivity(intent);
     }
-
     public void disable() {
-                final Button Vote = findViewById(R.id.vote);
-                condref.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        String text = dataSnapshot.getValue(String.class);
-                        if (text.equals("0")) {
-                            Vote.setEnabled(false);
-                        } else if (text.equals("1")) {
-                            Vote.setEnabled(true);
-                        }
-                    }
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
 
-            }
+       final Button Result = findViewById(R.id.showresult);
+       condRef.addValueEventListener(new ValueEventListener() {
+           @Override
+           public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+               String text = dataSnapshot.getValue(String.class);
+               if(text.equals("1")) {
+                   Result.setEnabled(true);
+               }
+                else if(text.equals("0")) {
+                    Result.setEnabled(false);
+               }
+           }
+
+           @Override
+           public void onCancelled(@NonNull DatabaseError databaseError) {
+
+           }
         });
     }
+
+
 }
