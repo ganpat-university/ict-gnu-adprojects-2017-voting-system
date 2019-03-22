@@ -132,6 +132,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="#0288D1"
+        android:onClick="UpdateData"
         android:text="@string/done"
         android:textAppearance="@android:style/TextAppearance.Material"
         android:textColor="#FFFFFF"
