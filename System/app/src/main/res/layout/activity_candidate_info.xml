@@ -3,86 +3,73 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_marginLeft="10dp"
     android:layout_marginTop="41.57dp"
     android:layout_marginRight="10dp"
     android:layout_marginBottom="10dp"
     tools:context=".Candidate_Info_Activity">
 
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.09"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.4">
+            android:layout_margin="30dp">
 
-            <Button
-                android:id="@+id/button6"
-                style="@android:style/Widget.Material.Button"
-                android:layout_width="match_parent"
-                android:layout_height="155dp"
-                android:layout_marginBottom="10dp"
-                android:background="#03A9F4"
-                android:fontFamily="sans-serif"
-                android:text="@string/candidate_1"
-                android:textAppearance="@android:style/TextAppearance.Material"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                tools:text="Candidate 1" />
+            <TextView
+                android:id="@+id/Candidate_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </android.support.v7.widget.CardView>
 
-            <Button
-                android:id="@+id/button7"
-                style="@android:style/Widget.Material.Button"
-                android:layout_width="match_parent"
-                android:layout_height="157dp"
-                android:layout_marginBottom="10dp"
-                android:background="#03A9F4"
-                android:fontFamily="sans-serif"
-                android:text="@string/candidate_2"
-                android:textAppearance="@android:style/TextAppearance.Material"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                tools:text="Candidate 2" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp">
 
-            <Button
-                android:id="@+id/button8"
-                style="@android:style/Widget.Material.Button"
-                android:layout_width="match_parent"
-                android:layout_height="159dp"
-                android:layout_marginBottom="10dp"
-                android:background="#03A9F4"
-                android:fontFamily="sans-serif"
-                android:text="@string/candidate_3"
-                android:textAppearance="@android:style/TextAppearance.Material"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                tools:text="Candidate 3" />
+            <TextView
+                android:id="@+id/Candidate_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </android.support.v7.widget.CardView>
 
-            <Button
-                android:id="@+id/button9"
-                style="@android:style/Widget.Material.Button"
-                android:layout_width="match_parent"
-                android:layout_height="157dp"
-                android:background="#03A9F4"
-                android:fontFamily="sans-serif"
-                android:text="@string/candidate_4"
-                android:textAppearance="@android:style/TextAppearance.Material"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                tools:text="Candidate 4" />
-        </LinearLayout>
-    </ScrollView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp">
+
+            <TextView
+                android:id="@+id/Candidate_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp">
+
+            <TextView
+                android:id="@+id/Candidate_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
