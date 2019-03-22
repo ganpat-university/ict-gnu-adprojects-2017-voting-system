@@ -46,6 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="20dp"
+            android:checked="true"
             android:text="@string/candidate_4" />
     </RadioGroup>
 
@@ -56,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="#03A9F4"
-        android:onClick="goTomainActivity"
+        android:onClick="gotomainActivity"
         android:text="@string/vote"
         android:textAppearance="@android:style/TextAppearance.Material"
         android:textColor="#FFFFFF"
