@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -16,7 +17,7 @@ import com.google.firebase.database.ValueEventListener;
 public class Dashboard_Voter_Activity extends AppCompatActivity {
     DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
     DatabaseReference condRef = rootRef.child("condition_result");
-    DatabaseReference condref = rootRef.child("condition");
+    DatabaseReference condref1 = rootRef.child("condition");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,7 @@ public class Dashboard_Voter_Activity extends AppCompatActivity {
 
     public void disableVote() {
         final Button Vote = findViewById(R.id.vote);
-        condref.addValueEventListener(new ValueEventListener() {
+        condref1.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String text = dataSnapshot.getValue(String.class);
@@ -71,13 +72,26 @@ public class Dashboard_Voter_Activity extends AppCompatActivity {
                 }
                 else if (text.equals("0")) {
                     Result.setEnabled(false);
-                }
-                }
-
+                }}
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
         });
     }
+
+    public void Logout(View view) {
+        findViewById(R.id.Logout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+
+                Intent intent = new Intent(Dashboard_Voter_Activity.this, MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                startActivity(intent);
+            }
+        });
+    }
+
 }
