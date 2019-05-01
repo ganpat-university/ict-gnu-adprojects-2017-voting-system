@@ -23,6 +23,38 @@
           }
         },
         {
+          "client_id": "961309432993-9dqi9ejk5nc7foliqgihg738rm7c7qkj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.votingsystem",
+            "certificate_hash": "c5e1b006a7fafbd43936a730d5f7e8d49e26b0ca"
+          }
+        },
+        {
+          "client_id": "961309432993-st7rt6c2o9u1p52mdqg5pi7uv3b0f016.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.votingsystem",
+            "certificate_hash": "293665489d775b48247d977e1325a6a4113efaa5"
+          }
+        },
+        {
+          "client_id": "961309432993-f73k3uifoc4ttn9a8191msbhefi1ldqc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.votingsystem",
+            "certificate_hash": "4f6cdd459c9a6242b0ede11e79d483c9dfcb1eda"
+          }
+        },
+        {
+          "client_id": "961309432993-p2t9tpbraai06msjaqnq32risufnrd5s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.votingsystem",
+            "certificate_hash": "2fdf93dec7c0a3bee9e8c5cffbda5ff7402547be"
+          }
+        },
+        {
           "client_id": "961309432993-cmoflr9m6hmgj9oasouof0tiecjvrjjg.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -33,20 +65,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
               "client_id": "961309432993-cmoflr9m6hmgj9oasouof0tiecjvrjjg.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

@@ -36,8 +36,7 @@ public class Result_Activity extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     DocumentSnapshot doc = task.getResult();
                     assert doc != null;
-                    String fields = "Candidate 1: "+
-                            "\nvotes are " + doc.get("count");
+                    String fields = "Candidate 1: "+ "\nvotes are " + doc.get("Count");
                     textDisplay.setText(fields);
                 }
             }
@@ -50,8 +49,7 @@ public class Result_Activity extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     DocumentSnapshot doc = task.getResult();
                     assert doc != null;
-                    String fields = "Candidate 2: "+
-                            "\nvotes are " + doc.get("count");
+                    String fields = "Candidate 2: "+ "\nvotes are " + doc.get("Count");
                     textDisplay1.setText(fields);
                 }
 
@@ -65,8 +63,7 @@ public class Result_Activity extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     DocumentSnapshot doc = task.getResult();
                     assert doc != null;
-                    String fields = "Candidate 3: "+
-                            "\nvotes are " + doc.get("count");
+                    String fields = "Candidate 3: "+ "\nvotes are " + doc.get("Count");
                     textDisplay2.setText(fields);
                 }
 
@@ -80,8 +77,7 @@ public class Result_Activity extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     DocumentSnapshot doc = task.getResult();
                     assert doc != null;
-                    String fields = "Candidate 4: "+
-                            "\nvotes are " + doc.get("count");
+                    String fields = "Candidate 4: "+ "\nvotes are " + doc.get("Count");
                     textDisplay3.setText(fields);
                 }
 

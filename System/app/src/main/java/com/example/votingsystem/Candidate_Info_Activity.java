@@ -100,7 +100,7 @@ public class Candidate_Info_Activity extends AppCompatActivity {
 
     public void setCandi_4() {
         final TextView textDisplay = findViewById(R.id.Candidate_4);
-        DocumentReference user = db.collection("Candidate").document("Candidate");
+        DocumentReference user = db.collection("Candidate").document("Candidate 4");
         user.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task< DocumentSnapshot > task) {

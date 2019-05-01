@@ -2,7 +2,7 @@
     <string name="the_winning_candidate_is">The Winning Candidate is:</string>
     <string name="seats_won">Seats Won:</string>
     <string name="vote_start_end">Vote(Start/End)</string>
-    <string name="app_name">VotingSystem</string>
+    <string name="app_name">Matdaan</string>
     <string name="edited_text">Edited Text</string>
     <string name="candidate_1">Candidate 1</string>
     <string name="candidate_2">Candidate 2</string>
@@ -25,4 +25,16 @@
     <string name="description">Description</string>
     <string name="party_name">Party Name</string>
     <string name="description_of_the_string_candidate">Description of the @string/candidate</string>
+    <string name="fetch">Fetch</string>
+    <string name="button">Button</string>
+    <string name="done">Done</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="enter_your_otp_here">Enter your OTP here</string>
+    <string name="sign_in">Sign In</string>
+    <string name="otp">OTP</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="number">Number</string>
 </resources>
