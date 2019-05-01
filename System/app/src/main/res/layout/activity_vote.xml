@@ -21,32 +21,31 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/candi_1"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="20dp"
             android:text="@string/candidate_1" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/candi_2"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="20dp"
             android:text="@string/candidate_2" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/candi_3"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="20dp"
             android:text="@string/candidate_3" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/candi_4"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="20dp"
-            android:checked="true"
             android:text="@string/candidate_4" />
     </RadioGroup>
 
@@ -57,7 +56,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="#03A9F4"
-        android:onClick="gotomainActivity"
+        android:enabled="false"
+        android:onClick="Logout"
         android:text="@string/vote"
         android:textAppearance="@android:style/TextAppearance.Material"
         android:textColor="#FFFFFF"
