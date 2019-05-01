@@ -115,7 +115,7 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/AddC"
         style="@android:style/Widget.Material.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -124,6 +124,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="80dp"
         android:background="#03A9F4"
+        android:onClick="send_data"
         android:text="@string/add"
         android:textColor="#FFFFFF"
         android:textSize="18sp"

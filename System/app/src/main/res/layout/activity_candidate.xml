@@ -79,7 +79,7 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/Add"
+            android:id="@+id/AddC"
             style="@android:style/Widget.Material.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,19 +93,6 @@
             android:text="@string/add"
             android:textColor="#FFFFFF" />
 
-        <Button
-            android:id="@+id/Delete"
-            style="@android:style/Widget.Material.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="0dp"
-            android:layout_weight="1"
-            android:background="#0288D1"
-            android:text="@string/delete"
-            android:textColor="#FFFFFF" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
